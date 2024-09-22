@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h3 style="text-align: center">Please fill your details</h3>
+    <form id="myForm">
+        <label for="name">Name</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Name" >
+        <br>
+        <label for="age">Age</label>
+        <br>
+        <input type="number" id="age" name="age" placeholder="Age">
+        <br>
+        <label for="gender">Gender</label>
+        <div class="radio-click">
+            <input type="radio" id="male" name="Gender" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div class="radio-click">
+            <input type="radio" id="female" name="Gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div class="radio-click">
+            <input type="radio" id="pnts" name="Gender" value="pnts">
+            <label for="pnts">Prefer not to say</label>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        <p id="errorMessage" style="color: rgb(151, 6, 6);"></p>
+     </form>
+     <script src="./script.js"></script>
+</body>
+</html>
